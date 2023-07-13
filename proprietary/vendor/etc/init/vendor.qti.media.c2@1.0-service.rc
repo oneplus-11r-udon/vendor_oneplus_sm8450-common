@@ -1,0 +1,12 @@
+service vendor-qti-media-c2-hal-1-0 /vendor/bin/hw/vendor.qti.media.c2@1.0-service
+    class hal
+    user mediacodec
+    group mediadrm camera drmrpc system
+    ioprio rt 4
+    writepid /dev/cpuset/foreground/tasks
+#ifdef OPLUS_BUG_STABILITY
+#HuXin@MULTIMEDIA.MEDIASERVER.PLAYER.2888559, 2022/01/05,
+#Add for reboot mediaserver/media.swcodec after c2 service crash
+    onrestart restart media
+    onrestart restart media.swcodec
+#endif OPLUS_BUG_STABILITY
