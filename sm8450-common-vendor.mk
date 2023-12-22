@@ -843,8 +843,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libcpion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcpion.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libcvp2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvp2_1.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libcvpcpuRev_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvpcpuRev_skel.so \
-    vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libcwb_client_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcwb_client_vendor.so \
-    vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libcwb_qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcwb_qcom.so \
+    vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libcwb_sm8350.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcwb_sm8350.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libdataitems.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdataitems.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdiag.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libdigital-dimming.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdigital-dimming.so \
@@ -1171,7 +1170,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/vendor.libdpmtcm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.libdpmtcm.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/vendor.libmwqemiptablemgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.libmwqemiptablemgr.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/vendor.oplus.hardware.communicationcenter-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.communicationcenter-V1-ndk_platform.so \
-    vendor/oneplus/sm8450-common/proprietary/vendor/lib64/vendor.oplus.hardware.cwb@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.cwb@1.0.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/vendor.oplus.hardware.display.MixLut3D-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.display.MixLut3D-V1-ndk_platform.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/vendor.pixelworks.hardware.display@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.pixelworks.hardware.display@1.0.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/vendor.pixelworks.hardware.display@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.pixelworks.hardware.display@1.1.so \
