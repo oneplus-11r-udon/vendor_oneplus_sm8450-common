@@ -107,6 +107,15 @@
             <!-- measured 90%:149-1332 med:379/360 FLAKY(109 - 958 < mx=1400.6) RG.VARIANCE:2.1 -->
             <Limit name="measured-frame-rate-176x144" range="865-2800" /> <!-- N=272 v90%=3.0 -->
         </MediaCodec>
+        <!-- #ifdef OPLUS_BUG_COMPATIBILITY -->
+        <!-- ziran.deng@MM.MediaServer, 2023/7/20, -->
+        <MediaCodec name="c2.android.av1.decoder" type="video/av01" update="true">
+            <Limit name="measured-frame-rate-352x288" range="144-319" />
+            <Limit name="measured-frame-rate-640x360" range="107-236" />
+            <Limit name="measured-frame-rate-720x480" range="80-178" />
+            <Limit name="measured-frame-rate-1280x720" range="39-87" />
+        </MediaCodec>
+        <!-- #endif //OPLUS_BUG_COMPATIBILITY -->
     </Decoders>
 
     <Encoders>
@@ -129,6 +138,14 @@
         </MediaCodec>
 
         <!-- C2 SW encoders -->
+        <!-- #ifdef OPLUS_BUG_COMPATIBILITY -->
+        <!-- ziran.deng@MM.MediaServer, 2023/7/20, -->
+        <MediaCodec name="c2.android.av1.encoder" type="video/av01" update="true">
+            <Limit name="measured-frame-rate-320x240" range="149-330" />
+            <Limit name="measured-frame-rate-720x480" range="40-89" />
+            <Limit name="measured-frame-rate-1280x720" range="17-37" />
+        </MediaCodec>
+        <!-- #endif //OPLUS_BUG_COMPATIBILITY -->
         <MediaCodec name="c2.android.h263.encoder" type="video/3gpp" update="true">
             <!-- measured 95%:144-637 med:343/343 FLAKY(mn=40.8 < 144 - 808 < mx=916.6) variance:2.1 -->
             <Limit name="measured-frame-rate-176x144" range="287-459" /> <!-- TWEAKED N=224 -->

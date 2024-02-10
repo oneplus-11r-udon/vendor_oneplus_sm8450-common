@@ -7,7 +7,7 @@
       Each feature has an xml file to define the feature components
 
   ===========================================================================
-  Copyright (c) 2020-2022 Qualcomm Technologies, Inc.
+  Copyright (c) 2020-2023 Qualcomm Technologies, Inc.
   All Rights Reserved.
   Confidential and Proprietary - Qualcomm Technologies, Inc.
   ===========================================================================
@@ -17,10 +17,14 @@
    <Name>VideoPowerOptFeature</Name>
    <Libname>libvideooptfeature.so</Libname>
    <Configs>
+        <VIDEO_OPT>1</VIDEO_OPT>
+        <BROWSER_OPT>0</BROWSER_OPT>
         <MAX_CONTENT_FPS>30</MAX_CONTENT_FPS>
         <MAX_HW_CONTENT_FPS>120</MAX_HW_CONTENT_FPS>
         <MAX_PANEL_FPS>120</MAX_PANEL_FPS>
         <MAX_SAMPLE_NUM>6</MAX_SAMPLE_NUM>
+        <SCALING_DOWN_TASK_LOAD_BOOST_LEVEL_1>-10</SCALING_DOWN_TASK_LOAD_BOOST_LEVEL_1>
+        <SCALING_DOWN_TASK_LOAD_BOOST_LEVEL_2>-20</SCALING_DOWN_TASK_LOAD_BOOST_LEVEL_2>
     </Configs>
     <Profiles>
         <!-- Please keep profile with target at the top. -->

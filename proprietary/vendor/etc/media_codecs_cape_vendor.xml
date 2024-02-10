@@ -284,7 +284,11 @@
         </MediaCodec>
         <MediaCodec name="c2.qti.hevc.encoder" type="video/hevc">
             <Alias name="OMX.qcom.video.encoder.hevc"/>
-            <Limit name="size" min="128x128" max="8192x8192" />
+        <!-- #ifdef OPLUS_BUG_COMPATIBILITY -->
+        <!-- ziran.deng@MM.MediaServer, 2023/7/25, -->
+            <!--<Limit name="size" min="128x128" max="8192x8192" /> -->
+            <Limit name="size" min="128x128" max="4096x4096" />
+        <!-- #endif //OPLUS_BUG_COMPATIBILITY -->
             <Limit name="alignment" value="2x2" />
             <Limit name="block-size" value="16x16" />
             <Limit name="blocks-per-second" min="64" max="3916800" />
@@ -300,7 +304,7 @@
             <Limit name="performance-point-1920x1080" value="480" />
             <Limit name="performance-point-1920x1080" value="240" />
             <Limit name="performance-point-3840x2160" value="120" />
-            <Limit name="performance-point-7680x4320" value="30" />
+            <!-- <Limit name="performance-point-7680x4320" value="30" /> -->
         </MediaCodec>
         <MediaCodec name="c2.qti.hevc.encoder.cq" type="video/hevc">
             <Alias name="OMX.qcom.video.encoder.hevc.cq"/>

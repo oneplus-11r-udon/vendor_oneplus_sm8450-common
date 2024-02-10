@@ -74,11 +74,12 @@ case "$target" in
 #12432626 is decimal sum of supported codecs:MHAS/DSDIFF/DSF/APE/AIFF/WAV/QCP/MP3/MP2TS/MKV/FLV/DTS/AVI/ASF/AC3
 #4044018  is decimal sum of supported codecs:DSDIFF/DSF/APE/AIFF/WAV/QCP/MP3/MP2TS/MKV/FLV/DTS/AVI/ASF/AC3
 #4039922  is decimal sum of supported codecs:DSDIFF/DSF/APE/AIFF/WAV/QCP/MP3/MKV/FLV/DTS/AVI/ASF/AC3
+#3974386  is decimal sum of supported codecs:DSDIFF/DSF/APE/AIFF/QCP/MP3/MKV/FLV/DTS/AVI/ASF/AC3
 #        setprop vendor.mm.target.enable.qcom_parser 1040479
 #        setprop vendor.mm.target.enable.qcom_parser 1040463 [from post-CS2]
 #        setprop vendor.mm.target.enable.qcom_parser 4044018
 #else /* OPLUS_BUG_COMPATIBILITY */
-        setprop vendor.mm.target.enable.qcom_parser 4039922
+        setprop vendor.mm.target.enable.qcom_parser 3974386
 #endif /* OPLUS_BUG_COMPATIBILITY */
         case "$soc_hwid" in
             506|547|564)

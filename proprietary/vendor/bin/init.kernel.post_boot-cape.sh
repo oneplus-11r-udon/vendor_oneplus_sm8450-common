@@ -69,6 +69,11 @@ function oplus_configure_tuning_swappiness() {
 	local para_path=/proc/sys/vm
 	local kernel_version=`uname -r`
 
+	chp_support=0
+	if [ -f "/proc/cont_pte_hugepage/stat" ]; then
+		chp_support=1
+	fi
+
 	if [[ "$kernel_version" == "5.10"* ]]; then
 		para_path=/sys/module/oplus_bsp_zram_opt/parameters
 	fi
@@ -84,9 +89,14 @@ function oplus_configure_tuning_swappiness() {
 		echo 120  > $para_path/vm_swappiness_threshold2
 		echo 1500 > $para_path/swappiness_threshold2_size
 	else
-		echo 100  > $para_path/vm_swappiness_threshold1
+		if [ $chp_support -eq 1 ] ; then
+			echo 60  > $para_path/vm_swappiness_threshold1
+			echo 80  > $para_path/vm_swappiness_threshold2
+		else
+			echo 100  > $para_path/vm_swappiness_threshold1
+			echo 120  > $para_path/vm_swappiness_threshold2
+		fi
 		echo 4096 > $para_path/swappiness_threshold1_size
-		echo 120  > $para_path/vm_swappiness_threshold2
 		echo 2048 > $para_path/swappiness_threshold2_size
 	fi
 }
@@ -155,8 +165,7 @@ function configure_memory_parameters() {
 
 #ifdef OPLUS_FEATURE_ZRAM_OPT
 	# For vts test which has replace system.img
-	ls -l /product | grep '\-\>'
-	if [ $? -eq 0 ]; then
+	if [ -L "/product" ]; then
 		oplus_configure_zram_parameters
 	else
 		if [ -f /sys/block/zram0/hybridswap_enable ]; then

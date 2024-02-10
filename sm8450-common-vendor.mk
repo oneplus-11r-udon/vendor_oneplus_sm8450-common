@@ -8,13 +8,10 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8450-common/proprietary/product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/com.android.hotwordenrollment.common.util.xml \
     vendor/oneplus/sm8450-common/proprietary/odm/bin/hw/android.hardware.drm@1.4-service.widevine:$(TARGET_COPY_OUT_ODM)/bin/hw/android.hardware.drm@1.4-service.widevine \
-    vendor/oneplus/sm8450-common/proprietary/odm/bin/hw/vendor.oplus.hardware.displaypanelfeature@1.0-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.oplus.hardware.displaypanelfeature@1.0-service \
     vendor/oneplus/sm8450-common/proprietary/odm/bin/hw/vendor-oplus-hardware-performance-V1-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor-oplus-hardware-performance-V1-service \
     vendor/oneplus/sm8450-common/proprietary/odm/bin/hw/vendor.qti.esepowermanager@1.1-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.qti.esepowermanager@1.1-service \
     vendor/oneplus/sm8450-common/proprietary/odm/bin/hw/vendor.qti.secure_element@1.2-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.qti.secure_element@1.2-service \
     vendor/oneplus/sm8450-common/proprietary/odm/bin/oplus_sensor_fb:$(TARGET_COPY_OUT_ODM)/bin/oplus_sensor_fb \
-    vendor/oneplus/sm8450-common/proprietary/odm/bin/cwb_utils:$(TARGET_COPY_OUT_ODM)/bin/cwb_utils \
-    vendor/oneplus/sm8450-common/proprietary/odm/etc/compatibility_matrix_oplus_bluetooth_audio_extend.xml:$(TARGET_COPY_OUT_ODM)/etc/compatibility_matrix_oplus_bluetooth_audio_extend.xml \
     vendor/oneplus/sm8450-common/proprietary/odm/etc/init/android.hardware.drm@1.4-service.widevine.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.drm@1.4-service.widevine.rc \
     vendor/oneplus/sm8450-common/proprietary/odm/etc/init/vendor-oplus-hardware-performance-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor-oplus-hardware-performance-V1-service.rc \
     vendor/oneplus/sm8450-common/proprietary/odm/etc/init/vendor.qti.esepowermanager@1.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.qti.esepowermanager@1.1-service.rc \
@@ -46,12 +43,12 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8450-common/proprietary/odm/lib64/aiboost/libQnnHtpPrepare.so:$(TARGET_COPY_OUT_ODM)/lib64/aiboost/libQnnHtpPrepare.so \
     vendor/oneplus/sm8450-common/proprietary/odm/lib64/aiboost/libQnnHtpV69Stub.so:$(TARGET_COPY_OUT_ODM)/lib64/aiboost/libQnnHtpV69Stub.so \
     vendor/oneplus/sm8450-common/proprietary/odm/lib64/android.hardware.secure_element@1.0-impl.so:$(TARGET_COPY_OUT_ODM)/lib64/android.hardware.secure_element@1.0-impl.so \
+    vendor/oneplus/sm8450-common/proprietary/odm/lib64/hw/sensors.dynamic_sensor_hal.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/sensors.dynamic_sensor_hal.so \
     vendor/oneplus/sm8450-common/proprietary/odm/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so \
     vendor/oneplus/sm8450-common/proprietary/odm/lib64/lib-virtual-modem-protos.so:$(TARGET_COPY_OUT_ODM)/lib64/lib-virtual-modem-protos.so \
     vendor/oneplus/sm8450-common/proprietary/odm/lib64/libaiboost_qnn_sr.so:$(TARGET_COPY_OUT_ODM)/lib64/libaiboost_qnn_sr.so \
     vendor/oneplus/sm8450-common/proprietary/odm/lib64/libaiboost_sr.so:$(TARGET_COPY_OUT_ODM)/lib64/libaiboost_sr.so \
     vendor/oneplus/sm8450-common/proprietary/odm/lib64/libaiboost_ubwc.so:$(TARGET_COPY_OUT_ODM)/lib64/libaiboost_ubwc.so \
-    vendor/oneplus/sm8450-common/proprietary/odm/lib64/libbluetooth_audio_extend_factory_client.so:$(TARGET_COPY_OUT_ODM)/lib64/libbluetooth_audio_extend_factory_client.so \
     vendor/oneplus/sm8450-common/proprietary/odm/lib64/libcommcenterfw.so:$(TARGET_COPY_OUT_ODM)/lib64/libcommcenterfw.so \
     vendor/oneplus/sm8450-common/proprietary/odm/lib64/libcommcenterutils.so:$(TARGET_COPY_OUT_ODM)/lib64/libcommcenterutils.so \
     vendor/oneplus/sm8450-common/proprietary/odm/lib64/libdmtp-protos-lite.so:$(TARGET_COPY_OUT_ODM)/lib64/libdmtp-protos-lite.so \
@@ -64,15 +61,16 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8450-common/proprietary/odm/lib64/libosie_stub.so:$(TARGET_COPY_OUT_ODM)/lib64/libosie_stub.so \
     vendor/oneplus/sm8450-common/proprietary/odm/lib64/libpwirisfeature.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwirisfeature.so \
     vendor/oneplus/sm8450-common/proprietary/odm/lib64/libpwirishalwrapper.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwirishalwrapper.so \
+    vendor/oneplus/sm8450-common/proprietary/odm/lib64/libsnapdragoncolor-pxlw.so:$(TARGET_COPY_OUT_ODM)/lib64/libsnapdragoncolor-pxlw.so \
+    vendor/oneplus/sm8450-common/proprietary/odm/lib64/libtfa98xx.so:$(TARGET_COPY_OUT_ODM)/lib64/libtfa98xx.so \
     vendor/oneplus/sm8450-common/proprietary/odm/lib64/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_ODM)/lib64/mediadrm/libwvdrmengine.so \
     vendor/oneplus/sm8450-common/proprietary/odm/lib64/vendor.oplus.hardware.appradio@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.appradio@1.0.so \
-    vendor/oneplus/sm8450-common/proprietary/odm/lib64/vendor.oplus.hardware.bluetooth_audio_extend@2.1.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.bluetooth_audio_extend@2.1.so \
+    vendor/oneplus/sm8450-common/proprietary/odm/lib64/vendor.oplus.hardware.commondcs-V1-ndk_platform.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.commondcs-V1-ndk_platform.so \
     vendor/oneplus/sm8450-common/proprietary/odm/lib64/vendor.oplus.hardware.communicationcenter-V1-ndk_platform.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.communicationcenter-V1-ndk_platform.so \
-    vendor/oneplus/sm8450-common/proprietary/vendor/lib64/vendor.oplus.hardware.cwb@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.cwb@1.0.so \
+    vendor/oneplus/sm8450-common/proprietary/odm/lib64/vendor.oplus.hardware.cwb@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.cwb@1.0.so \
     vendor/oneplus/sm8450-common/proprietary/odm/lib64/vendor.oplus.hardware.ims@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.ims@1.0.so \
     vendor/oneplus/sm8450-common/proprietary/odm/lib64/vendor.oplus.hardware.performance-V1-ndk_platform.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.performance-V1-ndk_platform.so \
     vendor/oneplus/sm8450-common/proprietary/odm/lib64/vendor.oplus.hardware.radio@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.radio@1.0.so \
-    vendor/oneplus/sm8450-common/proprietary/odm/lib64/vendor.oplus.hardware.displaypanelfeature@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.displaypanelfeature@1.0.so \
     vendor/oneplus/sm8450-common/proprietary/odm/lib64/vendor.pixelworks.hardware.display@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.pixelworks.hardware.display@1.0.so \
     vendor/oneplus/sm8450-common/proprietary/odm/lib64/vendor.pixelworks.hardware.display@1.1.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.pixelworks.hardware.display@1.1.so \
     vendor/oneplus/sm8450-common/proprietary/odm/lib64/vendor.pixelworks.hardware.display@1.2.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.pixelworks.hardware.display@1.2.so \
@@ -81,14 +79,15 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8450-common/proprietary/odm/lib64/vendor.qti.esepowermanager@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.qti.esepowermanager@1.0.so \
     vendor/oneplus/sm8450-common/proprietary/odm/lib64/vendor.qti.esepowermanager@1.1.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.qti.esepowermanager@1.1.so \
     vendor/oneplus/sm8450-common/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
-    vendor/oneplus/sm8450-common/proprietary/system_ext/bin/wfdservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/wfdservice \
+    vendor/oneplus/sm8450-common/proprietary/system_ext/bin/wfdservice64:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/wfdservice64 \
     vendor/oneplus/sm8450-common/proprietary/system_ext/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/wfdservice.rc \
     vendor/oneplus/sm8450-common/proprietary/system_ext/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qcrilhook.xml \
     vendor/oneplus/sm8450-common/proprietary/system_ext/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_libpermissions.xml \
     vendor/oneplus/sm8450-common/proprietary/system_ext/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_permissions.xml \
     vendor/oneplus/sm8450-common/proprietary/system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml \
     vendor/oneplus/sm8450-common/proprietary/system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.qti.ims.rcsservice.xml \
-    vendor/oneplus/sm8450-common/proprietary/system_ext/etc/seccomp_policy/wfdservice.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice.policy \
+    vendor/oneplus/sm8450-common/proprietary/system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml \
+    vendor/oneplus/sm8450-common/proprietary/system_ext/etc/seccomp_policy/wfdservice64.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice64.policy \
     vendor/oneplus/sm8450-common/proprietary/system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_telephony_system_packages_config.xml \
     vendor/oneplus/sm8450-common/proprietary/system_ext/etc/sysconfig/qti_whitelist_system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_whitelist_system_ext.xml \
     vendor/oneplus/sm8450-common/proprietary/system_ext/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wfdconfigsink.xml \
@@ -301,6 +300,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/display/DPU720.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU720.xml \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/display/DPU7__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU7__.xml \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/display/DPU820.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU820.xml \
+    vendor/oneplus/sm8450-common/proprietary/vendor/etc/display/DPU830.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU830.xml \
+    vendor/oneplus/sm8450-common/proprietary/vendor/etc/display/DPU860.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU860.xml \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/display/DPU8__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU8__.xml \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/display/DPU9__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU9__.xml \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/display/advanced_sf_offsets.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/advanced_sf_offsets.xml \
@@ -364,7 +365,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.soter@1.0-service.rc \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/init/vendor.qti.hardware.trustedui@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.trustedui@1.0-service-qti.rc \
-    vendor/oneplus/sm8450-common/proprietary/vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/init/vendor.qti.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2@1.0-service.rc \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2audio@1.0-service.rc \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/init/vendor.qti.qspmhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.qspmhal@1.0-service.rc \
@@ -506,28 +506,11 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/seccomp_policy/wfdhdcphalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdhdcphalservice.policy \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/seccomp_policy/wfdvndservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdvndservice.policy \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/seccomp_policy/wifidisplayhalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wifidisplayhalservice.policy \
-    vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/cape_qrd_lsm6dst_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/cape_qrd_lsm6dst_0.json \
-    vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/diwali_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/diwali_ak991x_0.json \
-    vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/diwali_bu52053nvx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/diwali_bu52053nvx_0.json \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/diwali_default_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/diwali_default_sensors.json \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/diwali_dynamic_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/diwali_dynamic_sensors.json \
-    vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/diwali_hdk_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/diwali_hdk_ak991x_0.json \
-    vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/diwali_hdk_lps22hh_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/diwali_hdk_lps22hh_0.json \
-    vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/diwali_hdk_lsm6dst_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/diwali_hdk_lsm6dst_0.json \
-    vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/diwali_hdk_lsm6dst_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/diwali_hdk_lsm6dst_1.json \
-    vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/diwali_hdk_tmd3702_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/diwali_hdk_tmd3702_0.json \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/diwali_irq.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/diwali_irq.json \
-    vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/diwali_lps22hh_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/diwali_lps22hh_0.json \
-    vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/diwali_lsm6dst_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/diwali_lsm6dst_0.json \
-    vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/diwali_lsm6dst_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/diwali_lsm6dst_1.json \
-    vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/diwali_mtp_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/diwali_mtp_ak991x_0.json \
-    vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/diwali_mtp_lsm6dst_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/diwali_mtp_lsm6dst_0.json \
-    vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/diwali_mtp_lsm6dst_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/diwali_mtp_lsm6dst_1.json \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/diwali_power_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/diwali_power_0.json \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/diwali_qrd_dynamic_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/diwali_qrd_dynamic_sensors.json \
-    vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/diwali_qrd_lps22hh_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/diwali_qrd_lps22hh_0.json \
-    vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/diwali_qrd_sx932x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/diwali_qrd_sx932x_0.json \
-    vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/diwali_qrd_tmd3702_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/diwali_qrd_tmd3702_0.json \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/qsh_camera.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera.json \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/sns_amd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd.json \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/sns_amd_sw_disabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd_sw_disabled.json \
@@ -567,39 +550,17 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/sns_tilt_sw_enabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_sw_enabled.json \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/sns_tilt_to_wake.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_to_wake.json \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/sns_wrist_pedo.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_wrist_pedo.json \
-    vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/ukee_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ukee_ak991x_0.json \
-    vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/ukee_bu52053nvx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ukee_bu52053nvx_0.json \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/ukee_default_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ukee_default_sensors.json \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/ukee_dynamic_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ukee_dynamic_sensors.json \
-    vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/ukee_hdk_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ukee_hdk_ak991x_0.json \
-    vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/ukee_hdk_lps22hh_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ukee_hdk_lps22hh_0.json \
-    vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/ukee_hdk_lsm6dst_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ukee_hdk_lsm6dst_0.json \
-    vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/ukee_hdk_lsm6dst_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ukee_hdk_lsm6dst_1.json \
-    vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/ukee_hdk_tmd3702_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ukee_hdk_tmd3702_0.json \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/ukee_irq.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ukee_irq.json \
-    vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/ukee_lps22hh_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ukee_lps22hh_0.json \
-    vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/ukee_lsm6dst_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ukee_lsm6dst_0.json \
-    vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/ukee_lsm6dst_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ukee_lsm6dst_1.json \
-    vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/ukee_mtp_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ukee_mtp_ak991x_0.json \
-    vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/ukee_mtp_lsm6dst_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ukee_mtp_lsm6dst_0.json \
-    vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/ukee_mtp_lsm6dst_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ukee_mtp_lsm6dst_1.json \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/ukee_power_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ukee_power_0.json \
-    vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/ukee_qrd_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ukee_qrd_ak991x_0.json \
-    vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/ukee_qrd_lps22hh_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ukee_qrd_lps22hh_0.json \
-    vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/ukee_qrd_lsm6dst_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ukee_qrd_lsm6dst_0.json \
-    vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/ukee_qrd_sx932x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ukee_qrd_sx932x_0.json \
-    vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/ukee_qrd_tmd3702_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ukee_qrd_tmd3702_0.json \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/ukee_shtw2_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ukee_shtw2_0.json \
-    vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/ukee_sx932x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ukee_sx932x_0.json \
-    vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/ukee_tmd3702_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ukee_tmd3702_0.json \
-    vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/ukee_vertigo_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ukee_vertigo_ak991x_0.json \
-    vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/ukee_vertigo_lsm6dst_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ukee_vertigo_lsm6dst_0.json \
-    vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/ukee_vertigo_lsm6dst_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ukee_vertigo_lsm6dst_1.json \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/waipio_default_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/waipio_default_sensors.json \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/waipio_dynamic_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/waipio_dynamic_sensors.json \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/waipio_irq.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/waipio_irq.json \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/config/waipio_power_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/waipio_power_0.json \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
+    vendor/oneplus/sm8450-common/proprietary/vendor/etc/snapdragon_color_libs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/snapdragon_color_libs_config.xml \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
@@ -701,6 +662,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib/rfsa/adsp/bm2n55.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/bm2n55.bin \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib/rfsa/adsp/libDspIOProxy_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libDspIOProxy_skel.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib/rfsa/adsp/libQ6MSFR_manager_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libQ6MSFR_manager_skel.so \
+    vendor/oneplus/sm8450-common/proprietary/vendor/lib/rfsa/adsp/libVppFrcQnnHtp:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libVppFrcQnnHtp \
+    vendor/oneplus/sm8450-common/proprietary/vendor/lib/rfsa/adsp/libVppQnnHtp:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libVppQnnHtp \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib/rfsa/adsp/libadsp_jpege_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libadsp_jpege_skel.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib/rfsa/adsp/libapn_dsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libapn_dsp_skel.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib/rfsa/adsp/libbitml_nsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libbitml_nsp_skel.so \
@@ -718,12 +681,17 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib/rfsa/adsp/libhdr_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libhdr_skel.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib/rfsa/adsp/libhme_dsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libhme_dsp_skel.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib/rfsa/adsp/libmctfengine_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libmctfengine_skel.so \
+    vendor/oneplus/sm8450-common/proprietary/vendor/lib/rfsa/adsp/libmobilenet_dsp_frc:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libmobilenet_dsp_frc \
+    vendor/oneplus/sm8450-common/proprietary/vendor/lib/rfsa/adsp/libmobilenet_dsp_frc_networks:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libmobilenet_dsp_frc_networks \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib/rfsa/adsp/libosie_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libosie_skel.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib/rfsa/adsp/libqvr_cam_dsp_driver_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libqvr_cam_dsp_driver_skel.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib/rfsa/adsp/libqvr_dsp_driver_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libqvr_dsp_driver_skel.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib/rfsa/adsp/libscveT2T_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libscveT2T_skel.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib/rfsa/adsp/libtracker_6dof_skel_8250.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libtracker_6dof_skel_8250.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib/rfsa/adsp/libtracker_6dof_skel_8350.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libtracker_6dof_skel_8350.so \
+    vendor/oneplus/sm8450-common/proprietary/vendor/lib/rfsa/adsp/libvpp_ais_networks:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libvpp_ais_networks \
+    vendor/oneplus/sm8450-common/proprietary/vendor/lib/rfsa/adsp/libvpp_vqa_networks:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libvpp_vqa_networks \
+    vendor/oneplus/sm8450-common/proprietary/vendor/lib/rfsa/adsp/libvpt_action_recognition:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libvpt_action_recognition \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib/vendor.qti.hardware.AGMIPC@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.AGMIPC@1.0.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib/vendor.qti.hardware.iop@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.iop@1.0.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib/vendor.qti.hardware.iop@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.iop@2.0.so \
@@ -750,7 +718,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/hw/android.hardware.gnss-aidl-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss-aidl-impl-qti.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss@2.1-impl-qti.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/hw/com.dsi.ant@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.dsi.ant@1.0-impl.so \
-    vendor/oneplus/sm8450-common/proprietary/vendor/lib64/hw/sensors.dynamic_sensor_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.dynamic_sensor_hal.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/hw/sound_trigger.primary.taro.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sound_trigger.primary.taro.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so \
@@ -781,8 +748,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libApeSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libApeSwDec.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libCB.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCB.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libDspIOProxy_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDspIOProxy_stub.so \
-    vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libdisplayconfig.qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayconfig.qti.so \
-    vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libhdr_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr_stub.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libFileMux_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFileMux_proprietary.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libFlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFlacSwDec.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libGPQTEEC_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPQTEEC_vendor.so \
@@ -805,6 +770,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libTrustedUI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTrustedUI.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libTrustedUITZ.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTrustedUITZ.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libTrustedUIVM.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTrustedUIVM.so \
+    vendor/oneplus/sm8450-common/proprietary/vendor/lib64/lib_bt_aptx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_bt_aptx.so \
+    vendor/oneplus/sm8450-common/proprietary/vendor/lib64/lib_bt_ble.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_bt_ble.so \
+    vendor/oneplus/sm8450-common/proprietary/vendor/lib64/lib_bt_bundle.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_bt_bundle.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libadaptlaunch.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadaptlaunch.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libadm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadm.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libadreno_app_profiles.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadreno_app_profiles.so \
@@ -831,6 +799,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libbatterylistener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbatterylistener.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libbluetooth_audio_session_qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session_qti.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libbluetooth_audio_session_qti_2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session_qti_2_1.so \
+    vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libbt-hidlclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbt-hidlclient.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbtnv.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libcacertclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcacertclient.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libcapiv2svacnnvendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapiv2svacnnvendor.so \
@@ -848,12 +817,13 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libcpion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcpion.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libcvp2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvp2_1.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libcvpcpuRev_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvpcpuRev_skel.so \
-    vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libcwb_qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcwb_qcom.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libcwb_client_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcwb_client_vendor.so \
+    vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libcwb_qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcwb_qcom.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libdataitems.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdataitems.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdiag.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libdigital-dimming.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdigital-dimming.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libdisp-aba.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisp-aba.so \
+    vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libdisplayconfig.qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayconfig.qti.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libdisplayqos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayqos.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libdisplayskuutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayskuutils.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libdpmqmihal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdpmqmihal.so \
@@ -880,6 +850,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgsl.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libhalide_hexagon_host.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhalide_hexagon_host.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libhdr_backlight_adapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr_backlight_adapter.so \
+    vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libhdr_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr_stub.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libhdr_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr_tm.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libhdrdynamic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdrdynamic.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libhdrdynamicootf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdrdynamicootf.so \
@@ -1091,7 +1062,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libsys_info_cache.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsys_info_cache.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libsystem_health_mon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsystem_health_mon.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libtestutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtestutils.so \
-    vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libtfa98xx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtfa98xx.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libtime_genoff.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtime_genoff.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml2_1.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/libtracker_6dof_impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtracker_6dof_impl.so \
@@ -1160,7 +1130,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/soundfx/libreverbwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libreverbwrapper.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/soundfx/libshoebox.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libshoebox.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/soundfx/libvisualizer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libvisualizer.so \
-    vendor/oneplus/sm8450-common/proprietary/vendor/lib64/vendor.display.PanelChaplin@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.PanelChaplin@1.0.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.0.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.1.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.2.so \
@@ -1175,8 +1144,11 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/vendor.libdpmframework.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.libdpmframework.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/vendor.libdpmtcm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.libdpmtcm.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/vendor.libmwqemiptablemgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.libmwqemiptablemgr.so \
+    vendor/oneplus/sm8450-common/proprietary/vendor/lib64/vendor.oplus.hardware.appradioaidl-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.appradioaidl-V1-ndk_platform.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/vendor.oplus.hardware.communicationcenter-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.communicationcenter-V1-ndk_platform.so \
-    vendor/oneplus/sm8450-common/proprietary/vendor/lib64/vendor.oplus.hardware.display.MixLut3D-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.display.MixLut3D-V1-ndk_platform.so \
+    vendor/oneplus/sm8450-common/proprietary/vendor/lib64/vendor.oplus.hardware.cwb@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.cwb@1.0.so \
+    vendor/oneplus/sm8450-common/proprietary/vendor/lib64/vendor.oplus.hardware.ims-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.ims-V1-ndk_platform.so \
+    vendor/oneplus/sm8450-common/proprietary/vendor/lib64/vendor.oplus.hardware.radio-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.radio-V1-ndk_platform.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/vendor.pixelworks.hardware.display@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.pixelworks.hardware.display@1.0.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/vendor.pixelworks.hardware.display@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.pixelworks.hardware.display@1.1.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/vendor.pixelworks.hardware.display@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.pixelworks.hardware.display@1.2.so \
@@ -1219,6 +1191,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/vendor.qti.hardware.data.latency@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.latency@1.0.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/vendor.qti.hardware.data.lce@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.lce@1.0.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.qmi@1.0.so \
+    vendor/oneplus/sm8450-common/proprietary/vendor/lib64/vendor.qti.hardware.display.config-V5-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.config-V5-ndk_platform.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/vendor.qti.hardware.dpmservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.dpmservice@1.0.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/vendor.qti.hardware.dpmservice@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.dpmservice@1.1.so \
     vendor/oneplus/sm8450-common/proprietary/vendor/lib64/vendor.qti.hardware.dsp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.dsp@1.0.so \
@@ -1326,7 +1299,6 @@ PRODUCT_PACKAGES += \
     CneApp \
     IWlanService \
     TimeService \
-    PowerOffAlarm \
     HotwordEnrollmentOKGoogle \
     HotwordEnrollmentXGoogle \
     ImsRcsService \
@@ -1338,7 +1310,6 @@ PRODUCT_PACKAGES += \
     WfdCommon \
     com.android.hotwordenrollment.common.util \
     qcrilhook \
-    vendor.qti.hardware.alarm-V1.0-java \
     vendor.qti.ims.connection-V1.0-java \
     vendor.qti.ims.factory-V2.0-java \
     vendor.qti.ims.factory-V2.1-java \
@@ -1356,7 +1327,6 @@ PRODUCT_PACKAGES += \
     c2_manifest_vendor_audio \
     manifest_non_qmaa \
     manifest_non_qmaa_extn \
-    manifest_panelchaplin \
     vendor.qti.diag.hal.service \
     vendor.qti.gnss-service \
     vendor.qti.hardware.perf \
@@ -1365,8 +1335,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qxr-service \
     vendor.qti.hardware.servicetracker@1.2-service \
     vendor.qti.hardware.vpp@2.0-service \
+    device_manifest_communication_center_aidl \
     manifest_android.hardware.drm@1.4-service.widevine \
     manifest_oplus_cwb \
-    vendor.pixelworks.hardware.feature.irisfeature-service \
-    manifest_performance_aidl \
-    vendor.pixelworks.hardware.display@1.2
+    manifest_performance_aidl

@@ -9,5 +9,5 @@ INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES('qcrildb
 UPDATE qcril_properties_table SET def_val="true" WHERE property="persist.vendor.radio.bar_fake_gcell";
 UPDATE qcril_properties_table SET def_val="1" WHERE property="persist.vendor.radio.relay_oprt_change";
 UPDATE qcril_properties_table SET def_val="1" WHERE property="persist.vendor.radio.lte_vrte_ltd";
-UPDATE qcril_properties_table SET def_val="" WHERE property="persist.vendor.radio.mt_sms_ack";
+UPDATE qcril_properties_table SET def_val="10" WHERE property="persist.vendor.radio.mt_sms_ack";
 INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist.vendor.radio.force_gba_over_isim_app", "true");
