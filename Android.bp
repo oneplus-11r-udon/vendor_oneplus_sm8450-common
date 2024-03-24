@@ -126,9 +126,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "com.qualcomm.qti.gpudrivers.taro.api31",
+	name: "com.qualcomm.qti.gpudrivers.taro.api32",
 	owner: "oneplus",
-	apk: "proprietary/vendor/app/com.qualcomm.qti.gpudrivers.taro.api31/com.qualcomm.qti.gpudrivers.taro.api31.apk",
+	apk: "proprietary/vendor/app/com.qualcomm.qti.gpudrivers.taro.api32/com.qualcomm.qti.gpudrivers.taro.api32.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
